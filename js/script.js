@@ -62,6 +62,25 @@ $(function() {
     $('#rightColumnViews .view3').show();
   });
 
+  $('#keyConceptsDropdown').live('click', function() {
+    $('#keyConceptsDropdownOptions').toggle();
+  });
+
+  $('#keyConceptsDropdownOptions').live('click', function() {
+    $(this).hide();
+    $('.keyConceptAnswers').show();
+  });
+
+  $('#coreStandardsDropdown').live('click', function() {
+    $('#coreStandardsDropdownOptions').toggle();
+  });
+  $('#coreStandardsDropdownOptions').live('click', function() {
+    $(this).hide();
+    $('.commonCoreStandard').show();
+    $('.assessmentQuestions').show();
+    $('.analyzeBlock').show();
+  });
+
   changeView("assessment", "assessment");
   // top level steps
   $("#progress").accordion({

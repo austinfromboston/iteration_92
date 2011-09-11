@@ -1,23 +1,36 @@
 $(function() {
   var views = {
-    "assessment": "#assessmentK",
-    "framework": "#frameworkK",
-    "design": "#designK"
+    "assessment": "#assessmentK, #conceptsInput",
+    "framework": "#frameworkK, #conceptsRecord",
+    "design": "#designK, #conceptsRecord",
+    "publish": "#designK, #conceptsRecord"
   },
   changeView = function(oldID, newID) {
-    var fadeList = views[oldID].split(","),
-    showList = views[newID].split(","),
+    var hideList = views[oldID],
+    showList = views[newID],
     result = "";
-    $(fadeList).each(function(index, element) {
-      //result += "hide "+index+" "+element+"\n";
-      $(element).hide();
-    });
+    if (showList === undefined) {
+       return;
+    } else {
+      showList = showList.split(",");
+    }
+    if (hideList !== undefined) {
+      hideList = hideList.split(",");
+      $(hideList).each(function(index, element) {
+        //result += "hide "+index+" "+element+"\n";
+        $(element).hide();
+      });
+    }
     $(showList).each(function(index, element) {
       //result += "show "+index+" "+element+"\n"; 
       $(element).show();
     });
     //alert(result);
   }
+  $('[data-content]').each( function() {
+    $(this).load($(this).data('content'));
+  });
+
   changeView("assessment", "assessment");
   // top level steps
   $("#progress").accordion({

@@ -69,3 +69,9 @@ p {
   left: 0px;
   display: none;
 }
+
+#progress div {
+  height: 300px;
+  min-height: 300px;
+  overflow: hidden;
+}

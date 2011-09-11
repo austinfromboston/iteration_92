@@ -36,7 +36,7 @@ p {
 }
 
 #icon {
-  width: 5%;
+  width: 6%;
   float: left;
   margin-left: 5%;
   margin-bottom: 1%;
@@ -45,10 +45,11 @@ p {
 #title {
   float: left;
   font-size: 2.0em;
+  margin-top: 1%;
   margin-left: 1%;
   font-family: "Istok+Web",Helvetica,Arial,Verdana,sans-serif; 
-  text-shadow: 1px 1px 3px #888; /* FF3.5+, Opera 9+, Saf1+, Chrome */
-  color: #ebb;
+  text-shadow: 1px 1px 3px #111; /* FF3.5+, Opera 9+, Saf1+, Chrome */
+  color: #f66;
 }
 .firstHalf {
   font-weight: 700;

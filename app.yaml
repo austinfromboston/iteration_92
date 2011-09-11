@@ -21,6 +21,12 @@ handlers:
 - url: /load
   static_dir: load 
 
+- url: /2nd_column
+  static_dir: 2nd_column 
+
+- url: /3rd_column
+  static_dir: 3rd_column
+
 - url: /robots\.txt
   static_files: robots.txt
   upload: robots\.txt

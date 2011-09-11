@@ -1,9 +1,10 @@
 body {
-  background: #123;
-  color: #333;
+  background: #346;
+  color: #ddd;
   font-size: 11px;
   height: auto;
   padding-bottom: 20px;
+  font-family: "helvetica neue",Helvetica,Arial,Verdana,sans-serif;
 }
 
 a {
@@ -41,9 +42,19 @@ p {
   margin-bottom: 1%;
 }
 
-// Title
 #title {
   float: left;
+  font-size: 2.0em;
+  margin-left: 1%;
+  font-family: "Istok+Web",Helvetica,Arial,Verdana,sans-serif; 
+  text-shadow: 1px 1px 3px #888; /* FF3.5+, Opera 9+, Saf1+, Chrome */
+  color: #ebb;
+}
+.firstHalf {
+  font-weight: 700;
+}
+.secondHalf {
+  font-weight: 400;
 }
 
 .unionContainer {

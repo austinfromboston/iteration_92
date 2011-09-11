@@ -23,6 +23,26 @@ ul.dropdownOptions {
 .dropdownOptions li:hover {
   background-color: #8d8d8d;
   color: #efefef;
+  position: absolute;
 }
 
+.bloomsTaxonomy {
+  margin-top: 20px;
+  list-style: none;
+}
+.bloomsTaxonomy li {
+  margin: 0;
+}
 
+.taxonomyHeader {
+  border: 1px solid white;
+  background: #d3d3d3;
+  padding: 5px;
+  clear: both;
+  color: black;
+  margin: 0;
+}
+
+.listContainer {
+  position: relative;
+}

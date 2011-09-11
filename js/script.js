@@ -27,9 +27,15 @@ $(function() {
     });
     //alert(result);
   }
-  $('[data-content]').each( function() {
-    $(this).load($(this).data('content'));
-  });
+
+  function loadContents() {
+    $('[data-content]:not(.loaded)').each( function() {
+      $(this).load($(this).data('content'));
+      $(this).addClass('loaded');
+    });
+  }
+
+  loadContents();
 
   changeView("assessment", "assessment");
   // top level steps

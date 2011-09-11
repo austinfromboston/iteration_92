@@ -46,6 +46,20 @@ $(function() {
   $('.assessmentAnswerSaveButton input').live( 'click', function() {
     $('#framework').click();
     $(this).hide();
+    $('#rightColumnViews .view').hide();
+    $('#rightColumnViews .view2').show();
+  });
+
+  $('.startWritingButton input').live('click', function() {
+    $(this).parent().hide();
+    $('.procedureInputArea').show();
+  });
+
+  $('.saveProcedure').live('click', function() {
+    $('.mid-segment').hide();
+    $('.procedureNotes').show();
+    $('#rightColumnViews .view').hide();
+    $('#rightColumnViews .view3').show();
   });
 
   changeView("assessment", "assessment");

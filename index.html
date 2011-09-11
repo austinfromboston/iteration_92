@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/960.css">
   <link rel="stylesheet" href="css/eggplant/jquery-ui-1.8.16.custom.css">
   <link rel="stylesheet" href="css/architect.css"> 
+  <link rel="stylesheet" href="css/behavior.css"> 
   <script src="js/libs/modernizr-1.7.min.js"></script>
 
 </head> 
@@ -32,9 +33,7 @@
   <div class="grid_3">
 <div id="progress">
 	<h3 id="assessment" ><a href="#">Step 1:  Assessment</a></h3>
-  <div data-content="/load/1_this_lessoncast_explains_x_for_y.html">
-  <br><br><br>
-  </div>
+  <div data-content="/load/1_this_lessoncast_explains_x_for_y.html"></div>
 	<h3 id="framework"><a href="#">Step 2:  Framework</a></h3>
   <div data-content="/load/procedure.html"></div>
 	<h3 id="design"><a href="#">Step 3:  Design</a></h3>
@@ -54,8 +53,8 @@
           </div>
           <div id="conceptsRecord" class="union">
             <div data-content="/load/key_concept_answers.html"></div>
-            <div data-content="/load/assessment_questions.html"></div>
-            <div data-content="/load/assessment_questions_answer.html"></div>
+            <div data-content="/3rd_column/assessment_questions.html"></div>
+            <div data-content="/3rd_column/assessment_questions_answer.html"></div>
           </div>
         </div>
       <div id="frameworkK" class="union">BBB</div>
@@ -66,10 +65,14 @@
     </p> 
   </div> 
   <div class="grid_6">
-    <h3>Various.  Either h3/div pairs or ul</h3>
-    <p> 
-      380
-    </p> 
+    <div id="rightColumnViews"
+      <div class="view1">
+        <h3>Outcomes</h3>
+        <div data-content="/3rd_column/key_concept_answers.html"></div>
+        <div data-content="/3rd_column/assessment_questions.html"></div>
+        <div data-content="/3rd_column/assessment_questions_answer.html"></div>
+      </div>
+    </div>
   </div> 
   <div class="clear"></div>  
 </div> 

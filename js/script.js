@@ -36,6 +36,17 @@ $(function() {
   }
 
   loadContents();
+  setInterval(loadContents, 2000);
+
+  $('.assessmentInputButton input').live('click', function() {
+    $('.assessmentAnswer').show();
+    $(this).hide();
+    $('.assessmentAnswerSaveButton').show();
+  });
+  $('.assessmentAnswerSaveButton input').live( 'click', function() {
+    $('#framework').click();
+    $(this).hide();
+  });
 
   changeView("assessment", "assessment");
   // top level steps

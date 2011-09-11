@@ -70,7 +70,7 @@ $(function() {
   $('#coreStandardsDropdown').live('change', function() {
     $('.commonCoreStandard').show();
     $('.assessmentQuestions').show();
-    $('.analyzeBlock').show();
+    $('#analyzeBlock').show();
   });
 
   changeView("assessment", "assessment");

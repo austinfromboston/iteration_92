@@ -53,3 +53,19 @@ p {
 .container_24 {
   background-image: url(../img/24_col.gif);
 }
+
+#icon {
+  width: 7%;
+  float: left;
+  margin-left: 5%;
+}
+
+.unionContainer {
+  position: relative;
+}
+.union {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}

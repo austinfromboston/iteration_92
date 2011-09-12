@@ -83,12 +83,6 @@ p {
 
 #progress li {
   list-style: none;
-  left: -40px;
 }
 
-.slidesNav li {
-  width: 30px;
-  height: 30px;
-  border-color: white;
-  border-width: 2px;
-}
+

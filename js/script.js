@@ -84,6 +84,6 @@ $(function() {
      // ui.oldContent // jQuery object, previous content
    }
   });
-  
+  $(".bloomsTaxonomy").accordion();
 });
 

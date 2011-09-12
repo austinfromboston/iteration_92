@@ -2,8 +2,7 @@ $(function() {
   var views = {
     "assessment": "#assessmentK, #conceptsInput",
     "framework": "#frameworkK, #conceptsRecord",
-    "design": "#designK, #conceptsRecord",
-    "publish": "#designK, #conceptsRecord"
+    "design": "#designK, #conceptsRecord"
   },
   changeView = function(oldID, newID) {
     var hideList = views[oldID],

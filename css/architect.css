@@ -29,10 +29,8 @@ h2 {
 }
 
 p {
-  border: 1px solid #666;
   overflow: hidden;
-  padding: 10px 0;
-  text-align: center;
+  //text-align: center;
 }
 
 #icon {
@@ -66,6 +64,7 @@ p {
   top: 0px;
   left: 0px;
   display: none;
+  margin: 0;
 }
 
 #progress div {
@@ -83,6 +82,16 @@ p {
 
 #progress li {
   list-style: none;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 2px;
 }
 
-
+#slides li {
+  padding-left:10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 5px;
+  border: 3px solid #eee;
+  margin-bottom: 3px;
+}

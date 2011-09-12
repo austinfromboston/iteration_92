@@ -76,7 +76,8 @@ $(function() {
   changeView("assessment", "assessment");
   // top level steps
   $("#progress").accordion({
-   change: function(event, ui) {
+   filspace: true,
+   changestart: function(event, ui) {
      changeView(ui.oldHeader.attr('id'), ui.newHeader.attr('id'));
      // ui.newHeader // jQuery object, activated header
      // ui.oldHeader // jQuery object, previous header

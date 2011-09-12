@@ -18,8 +18,8 @@ handlers:
 - url: /js
   static_dir: js
 
-- url: /load
-  static_dir: load 
+- url: /1st_column
+  static_dir: 1st_column 
 
 - url: /2nd_column
   static_dir: 2nd_column 
